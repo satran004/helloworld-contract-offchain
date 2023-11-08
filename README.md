@@ -29,3 +29,21 @@ validator {
   }
 }
 ```
+
+### Configuration
+
+- Provide "Blockfrost ProjectId" for PREPROD in ``HelloContractOffchain.java`` to create BackendService
+- To lock, uncomment lock() method call in main method
+- To unlock, uncomment unlock() method call in main method.
+
+### Build
+
+```
+./mvnw clean package
+```
+
+### Run
+
+```
+./mvnw exec:java -Dexec.mainClass="com.test.HelloContractOffchain"
+```
